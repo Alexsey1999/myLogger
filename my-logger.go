@@ -2,10 +2,6 @@ package myLogger
 
 import "fmt"
 
-func PrintColors() {
-	colors := []string{"red", "green", "blue"}
-
-	for _, val := range colors {
-		fmt.Println(val)
-	}
+func PrintColors(colors ...string) {
+	fmt.Println("colors v2", colors)
 }
